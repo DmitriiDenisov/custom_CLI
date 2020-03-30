@@ -5,6 +5,9 @@
 2. Install 'Oh my zsh', see 'Basic Installation':
 https://github.com/ohmyzsh/ohmyzsh
 
+Themes:
+https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+
 3. Customize vim and zsh:
 
 https://github.com/alex-33/dotfiles
