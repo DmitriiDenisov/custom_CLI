@@ -41,6 +41,13 @@ You enable the feature by adding `setopt correct` to your config `~/.zshrc` and 
 
 https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
+4. Enable mouse in vim:
+
+https://www.youtube.com/watch?v=kvmD_N1iIwg
+
+5. Add shortcut for cut and paste:
+
+https://www.youtube.com/watch?v=E_rbfQqrm7g&t=239s
 
 ## HotKeys in CLI:
 cmd + enter - FullScreen
@@ -49,7 +56,8 @@ ctrl+u - clear typed
 ctrl+k - clear the line after cursor
 
 ## HotKeys in vim:
-:u - undo
+u - undo
+ctrl+r - redo
 Ctrl-o, 0 beginning of line
 Ctrl-o, $ end of line
 Ctrl-o, f, y find first y in sentence
