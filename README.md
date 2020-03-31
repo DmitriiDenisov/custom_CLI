@@ -140,6 +140,14 @@ m -> d (delete file)
 Source:
 https://github.com/preservim/nerdtree
 
+11. fzf:
+isntall: 
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+usage: ctrl+t in command line for searching through computer
+ctrl+r for searching on history of command line
+
 ## HotKeys in CLI:
 cmd + enter - FullScreen
 ctrl+L - clear
