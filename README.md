@@ -124,6 +124,12 @@ https://superuser.com/questions/280500/how-does-one-switch-between-windows-on-vi
 <C-w>c - :close window
 <C-w>o - close all windows, leaving :only the current window open
 
+" swith between vim tabs with ctrl-left/right/up/down
+nnoremap <C-Right> <C-W>l
+nnoremap <C-Left> <C-W>h
+nnoremap <C-Up> <C-W>k
+nnoremap <C-Down> <C-W>j
+
 Source:
 https://github.com/preservim/nerdtree
 
