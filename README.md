@@ -62,6 +62,10 @@ To enable preview of images:
 1) set preview_images true
 2) set preview_images_method iterm2
 
+7. Midnight commander (mc):
+
+brew install midnight-commander
+
 ## HotKeys in CLI:
 cmd + enter - FullScreen
 ctrl+L - clear
