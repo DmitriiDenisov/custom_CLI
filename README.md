@@ -56,7 +56,11 @@ brew install ranger
 To draw borders:
 1)ranger --copy-config=all
 2) path to config: ~/.config/rc.conf
-2) Inside config file: set draw_borders true
+3) Inside config file: set draw_borders true
+
+To enable preview of images:
+1) set preview_images true
+2) set preview_images_method iterm2
 
 ## HotKeys in CLI:
 cmd + enter - FullScreen
