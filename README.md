@@ -85,6 +85,8 @@ Source: https://programmer.group/installation-of-vim-plug-in-youcompleteme-for-m
 
 Install:
 add to .vimrc plugin
+Plugin 'vim-syntastic/syntastic'
+Plugin 'nvie/vim-flake8'
 
 Settings:
 set statusline+=%#warningmsg#
@@ -103,6 +105,28 @@ let g:syntastic_python_checkers = ['python']
 Source:
 https://github.com/vim-syntastic/syntastic
 
+10. NERDTree 
+
+Install: 
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+
+Create file/rename file/remove file:
+https://sookocheff.com/post/vim/creating-a-new-file-or-directoryin-vim-using-nerdtree/
+
+Switch between windows:
+https://superuser.com/questions/280500/how-does-one-switch-between-windows-on-vim
+
+<C-w>n - :new horizontal split (editing a new empty buffer)
+<C-w>s - :split window horizontally (editing current buffer)
+<C-w>v - :vsplit window vertically (editing current buffer)
+<C-w>c - :close window
+<C-w>o - close all windows, leaving :only the current window open
+
+Source:
+https://github.com/preservim/nerdtree
+
 ## HotKeys in CLI:
 cmd + enter - FullScreen
 ctrl+L - clear
@@ -118,3 +142,11 @@ Ctrl-o, f, y find first y in sentence
 
 Shft+0 - start of next line (NOT i mode)
 shift+$ - beggining of line (NOT i mode)
+
+
+
+
+
+for ctrl+A for select all:
+
+map <C-a> <esc>ggVG<CR>
