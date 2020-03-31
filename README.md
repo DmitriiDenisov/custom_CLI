@@ -129,6 +129,13 @@ nnoremap <C-Right> <C-W>l
 nnoremap <C-Left> <C-W>h
 nnoremap <C-Up> <C-W>k
 nnoremap <C-Down> <C-W>j
+  
+For launcing by ctrl+n NERDTreeToggle:
+map <C-n> :NERDTreeToggle<CR>
+
+Remove/add/rename/copy file:
+m -> a (add file)
+m -> d (delete file)
 
 Source:
 https://github.com/preservim/nerdtree
