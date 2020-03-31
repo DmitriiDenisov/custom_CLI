@@ -66,6 +66,10 @@ To enable preview of images:
 
 brew install midnight-commander
 
+if backspace in insert mode does not work:
+add `set backspace=indent,eol,start` to `.vimrc` file
+
+
 ## HotKeys in CLI:
 cmd + enter - FullScreen
 ctrl+L - clear
