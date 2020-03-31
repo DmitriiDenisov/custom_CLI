@@ -79,6 +79,7 @@ add `set backspace=indent,eol,start` to `.vimrc` file
 - ./install.py --clang-completer
 If it's not working again run :PluginInstall
 
+Source: https://programmer.group/installation-of-vim-plug-in-youcompleteme-for-mac.html
 
 ## HotKeys in CLI:
 cmd + enter - FullScreen
