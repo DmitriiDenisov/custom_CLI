@@ -81,6 +81,28 @@ If it's not working again run :PluginInstall
 
 Source: https://programmer.group/installation-of-vim-plug-in-youcompleteme-for-mac.html
 
+9. Syntastic
+
+Install:
+add to .vimrc plugin
+
+Settings:
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+For using python3 checker instead of python2
+let g:syntastic_python_python_exec = 'python3'
+let g:syntastic_python_checkers = ['python']
+
+Source:
+https://github.com/vim-syntastic/syntastic
+
 ## HotKeys in CLI:
 cmd + enter - FullScreen
 ctrl+L - clear
