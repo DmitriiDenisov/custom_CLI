@@ -70,6 +70,16 @@ if backspace in insert mode does not work:
 add `set backspace=indent,eol,start` to `.vimrc` file
 
 
+8. Auto-Complete in vim:
+
+- add `Plugin 'Valloric/YouCompleteMe'` in .vimrc file
+- run in vim :PluginInstall
+- cd ~/.vim/bundle/YouCompleteMe/
+- ./install.py
+- ./install.py --clang-completer
+If it's not working again run :PluginInstall
+
+
 ## HotKeys in CLI:
 cmd + enter - FullScreen
 ctrl+L - clear
