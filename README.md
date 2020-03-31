@@ -1,5 +1,15 @@
 ### `ZSH`:
 
+iterm2:
+
+split horiz:
+cmd+d
+split vert:
+cmd-shift-d
+
+
+cd /u/lo/ce press tab => /usr/local/Cellar/
+
 1. Isntall zsh
 
 2. Install 'Oh my zsh', see 'Basic Installation':
@@ -147,6 +157,9 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 usage: ctrl+t in command line for searching through computer
 ctrl+r for searching on history of command line
+
+ssh ** press tab => suggests all ip
+or vim ** and then tab
 
 ## HotKeys in CLI:
 cmd + enter - FullScreen
