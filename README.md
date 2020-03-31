@@ -53,6 +53,11 @@ https://www.youtube.com/watch?v=E_rbfQqrm7g&t=239s
 
 brew install ranger
 
+To draw borders:
+1)ranger --copy-config=all
+2) path to config: ~/.config/rc.conf
+2) Inside config file: set draw_borders true
+
 ## HotKeys in CLI:
 cmd + enter - FullScreen
 ctrl+L - clear
