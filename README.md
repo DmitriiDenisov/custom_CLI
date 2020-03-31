@@ -49,6 +49,10 @@ https://www.youtube.com/watch?v=kvmD_N1iIwg
 
 https://www.youtube.com/watch?v=E_rbfQqrm7g&t=239s
 
+6. Ranger:
+
+brew install ranger
+
 ## HotKeys in CLI:
 cmd + enter - FullScreen
 ctrl+L - clear
