@@ -44,9 +44,10 @@ sudo apt install build-essential cmake vim python3-dev
 # initialize Vim plugins
 vim +PluginInstall +qall
 
+# Again for YouCompleteMe:
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --all 
-
+sudo apt install vim-gtk
 
 echo $'\360\237\215\251' " [DONE]"
 cd ~
