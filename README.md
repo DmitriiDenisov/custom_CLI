@@ -2,24 +2,24 @@
 
 ## Quick installation:
 
-## 1. Install iTerm2
+### 1. Install iTerm2
 
-## 2. Change color scheme of iTerm2
+### 2. Change color scheme of iTerm2
 
 In iTerm2 cmd+i -> colors -> 'Color Presents' -> 'Import...' and upload file `dank_neon.itermcolors` 
 
 Source: https://github.com/DankNeon/iterm
 
-## 3.1 OSx
+### 3.1 OSx
 
 You can run `bash activate_mac.sh` but it is better to go one by one
 
-## 3.2 Ubuntu
+### 3.2 Ubuntu
 
 You can run `bash activate_ubuntu.sh` but it is better to go one by one
 
 
-## Useful plagins which are included in Quick Installation files:
+### Useful plagins which are included in Quick Installation files:
 
 1. Auto suggestions, see 'Oh My Zsh':
 
@@ -45,38 +45,48 @@ https://www.youtube.com/watch?v=E_rbfQqrm7g&t=239s
 
 https://github.com/ycm-core/YouCompleteMe#installation
 
-9. Syntastic
+7. Syntastic
 
 Install:
+
 add to .vimrc plugin
+
 `Plugin 'vim-syntastic/syntastic'
+
 Plugin 'nvie/vim-flake8'`
 
 Settings:
 
 `set statusline+=%#warningmsg#`
+
 `set statusline+=%{SyntasticStatuslineFlag()}`
+
 `set statusline+=%*`
 
 `let g:syntastic_always_populate_loc_list = 1
+
 let g:syntastic_auto_loc_list = 1
+
 let g:syntastic_check_on_open = 1
+
 let g:syntastic_check_on_wq = 0`
 
 For using python3 checker instead of python2:
 
 `let g:syntastic_python_python_exec = 'python3'
+
 let g:syntastic_python_checkers = ['python']`
 
 Source:
 https://github.com/vim-syntastic/syntastic
 
-10. NERDTree 
+8. NERDTree 
 
 Install: 
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
+`Plugin 'scrooloose/nerdtree'
+
+Plugin 'jistr/vim-nerdtree-tabs'`
 
 Create file/rename file/remove file:
 https://sookocheff.com/post/vim/creating-a-new-file-or-directoryin-vim-using-nerdtree/
@@ -84,41 +94,43 @@ https://sookocheff.com/post/vim/creating-a-new-file-or-directoryin-vim-using-ner
 Switch between windows:
 https://superuser.com/questions/280500/how-does-one-switch-between-windows-on-vim
 
+Some shortcuts: 
+
 <C-w>n - :new horizontal split (editing a new empty buffer)
+  
 <C-w>s - :split window horizontally (editing current buffer)
+  
 <C-w>v - :vsplit window vertically (editing current buffer)
+  
 <C-w>c - :close window
+  
 <C-w>o - close all windows, leaving :only the current window open
 
-" swith between vim tabs with ctrl-left/right/up/down
+Switch between vim tabs with ctrl-left/right/up/down:
+
 nnoremap <C-Right> <C-W>l
+  
 nnoremap <C-Left> <C-W>h
+  
 nnoremap <C-Up> <C-W>k
+  
 nnoremap <C-Down> <C-W>j
   
 For launcing by ctrl+n NERDTreeToggle:
+
 map <C-n> :NERDTreeToggle<CR>
 
 Remove/add/rename/copy file:
+
 m -> a (add file)
+
 m -> d (delete file)
 
 Source:
 https://github.com/preservim/nerdtree
 
-11. fzf:
-isntall: 
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
 
-usage: ctrl+t in command line for searching through computer
-ctrl+r for searching on history of command line
-
-ssh ** press tab => suggests all ip
-or vim ** and then tab
-
-
-## Useful plugins that are not included in Quick installation:
+### Useful plugins that are not included in Quick installation:
 
 1. **Ranger:**
 
@@ -142,12 +154,19 @@ To enable preview of images:
 
 To install: `brew install midnight-commander`
 
+3. **fzf:**
 
+Isntall:  `git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install`
 
+Usage: ctrl+t in command line for searching through computer
+ctrl+r for searching on history of command line
 
+Exmples:
 
+`ssh **` press tab => suggests all ip
 
-
+`vim **` and then tab
 
 
 ## HotKeys in CLI:
