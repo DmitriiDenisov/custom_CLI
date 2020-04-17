@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/dmitrydenisov/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export LC_ALL=en_US.UTF-8
 
 setopt correct
@@ -129,6 +129,6 @@ alias zshconfig="vim ~/.zshrc"
 
 
 #
-source /Users/dmitrydenisov/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
