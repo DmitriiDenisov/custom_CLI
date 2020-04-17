@@ -31,9 +31,13 @@ sudo apt-get install vim
 # 6. Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-
-# 8. Install Plugins
-vim +PluginInstall +qall
+# 9. Special for Plugin YouCompleteMe
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py 
+python3 -m pip install setuptools 
+sudo apt install build-essential cmake vim python3-dev 
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --all 
 
 
 # Copy files
