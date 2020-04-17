@@ -129,6 +129,6 @@ alias zshconfig="vim ~/.zshrc"
 
 
 #
-source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
