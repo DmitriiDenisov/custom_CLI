@@ -136,13 +136,6 @@ https://github.com/preservim/nerdtree
 
 ### Useful plugins that are not included in Quick installation:
 
-0. **Add support of 3rd party libraries for YouCompleteMe**:
-
-Add to `~/.vimrc`:
-
-`let g:ycm_path_to_python_interpreter='/usr/local/bin/python3'`
-where you **need to specify your path to python3**
-
 1. **Ranger:**
 
 To install `brew install ranger`
@@ -157,6 +150,8 @@ To draw borders:
 
 To enable preview of images:
 
+0) `brew install w3m`
+
 1) `set preview_images true`
 
 2) `set preview_images_method iterm2`
@@ -167,8 +162,9 @@ To install: `brew install midnight-commander`
 
 3. **fzf:**
 
-Isntall:  `git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install`
+Isntall: brew install fzf
+
+Include search among hidden files: export FZF_DEFAULT_COMMAND='find .'
 
 Usage: ctrl+t in command line for searching through computer
 ctrl+r for searching on history of command line
