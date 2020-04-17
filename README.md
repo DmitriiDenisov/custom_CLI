@@ -51,31 +51,31 @@ Install:
 
 add to .vimrc plugin
 
-`Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-syntastic/syntastic'
 
-Plugin 'nvie/vim-flake8'`
+Plugin 'nvie/vim-flake8'
 
 Settings:
 
-`set statusline+=%#warningmsg#`
+set statusline+=%#warningmsg#
 
-`set statusline+=%{SyntasticStatuslineFlag()}`
+set statusline+=%{SyntasticStatuslineFlag()}
 
-`set statusline+=%*`
+set statusline+=%*
 
-`let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_always_populate_loc_list = 1
 
 let g:syntastic_auto_loc_list = 1
 
 let g:syntastic_check_on_open = 1
 
-let g:syntastic_check_on_wq = 0`
+let g:syntastic_check_on_wq = 0
 
 For using python3 checker instead of python2:
 
-`let g:syntastic_python_python_exec = 'python3'
+let g:syntastic_python_python_exec = 'python3
 
-let g:syntastic_python_checkers = ['python']`
+let g:syntastic_python_checkers = ['python']
 
 Source:
 https://github.com/vim-syntastic/syntastic
@@ -84,9 +84,9 @@ https://github.com/vim-syntastic/syntastic
 
 Install: 
 
-`Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 
-Plugin 'jistr/vim-nerdtree-tabs'`
+Plugin 'jistr/vim-nerdtree-tabs'
 
 Create file/rename file/remove file:
 https://sookocheff.com/post/vim/creating-a-new-file-or-directoryin-vim-using-nerdtree/
@@ -169,31 +169,21 @@ Exmples:
 `vim **` and then tab
 
 
-## HotKeys in CLI:
+## Shortcuts in CLI:
 cmd + enter - FullScreen
-ctrl+L - clear
-ctrl+u - clear typed 
-ctrl+k - clear the line after cursor
+cmd + K - clear
+ctrl + u - clear typed 
+ctrl + k - clear the line after cursor
 
-## HotKeys in vim:
+## Shortcuts in vim:
 u - undo
-ctrl+r - redo
+ctrl + r - redo
 Ctrl-o, 0 beginning of line
 Ctrl-o, $ end of line
 Ctrl-o, f, y find first y in sentence
 
 Shft+0 - start of next line (NOT i mode)
 shift+$ - beggining of line (NOT i mode)
-
-
-
-
-
-for ctrl+A for select all:
-
-map <C-a> <esc>ggVG<CR>
-
-
 
 
 ### Shortcuts for iTerm2:
