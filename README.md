@@ -1,43 +1,25 @@
-### `ZSH`:
+# Dotfiles
 
-iterm2:
+## Quick installation:
 
-split horiz:
-cmd+d
-split vert:
-cmd-shift-d
+## 1. Install iTerm2
 
+## 2. Change color scheme of iTerm2
 
-cd /u/lo/ce press tab => /usr/local/Cellar/
+In iTerm2 cmd+i -> colors -> 'Color Presents' -> 'Import...' and upload file `dank_neon.itermcolors` 
 
-1. Isntall zsh
+Source: https://github.com/DankNeon/iterm
 
-2. Install 'Oh my zsh', see 'Basic Installation':
-https://github.com/ohmyzsh/ohmyzsh
+## 3.1 OSx
 
-Themes:
-https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+You can run `bash activate_mac.sh` but it is better to go one by one
 
-3. Customize vim and zsh:
+## 3.2 Ubuntu
 
-https://github.com/alex-33/dotfiles
-
-if problems (ADD NAME OF ERROR + SCREEN)
-
-then
-Ubuntu => 
-```
-sudo apt-get install vim-gui-common
-sudo apt-get install vim-runtime
-```
-
-Mac => `brew install vim`
-
-aliases (add to ~/.zshrc), example:
-`alias virtual="ssh mail_2020q1@virtual-client.bigdatateam.ru -L 50070:virtual-master:50070"`
+You can run `bash activate_ubuntu.sh` but it is better to go one by one
 
 
-Useful plagins:
+## Useful plagins which are included in Quick Installation files:
 
 1. Auto suggestions, see 'Oh My Zsh':
 
@@ -45,7 +27,7 @@ https://github.com/zsh-users/zsh-autosuggestions
 
 2. Spelling correction:
 
-You enable the feature by adding `setopt correct` to your config `~/.zshrc` and then resourcing your configuration with the command `source ~/.zshrc`
+You enable the feature by adding `setopt correct` to your config `~/.zshrc` (already added)
 
 3. zsh-syntax-highlighting, see installation 'Oh-my-zsh':
 
@@ -59,58 +41,32 @@ https://www.youtube.com/watch?v=kvmD_N1iIwg
 
 https://www.youtube.com/watch?v=E_rbfQqrm7g&t=239s
 
-6. Ranger:
+6. Auto-Complete in vim (aka plugin YouCompleteMe):
 
-brew install ranger
-
-To draw borders:
-1)ranger --copy-config=all
-2) path to config: ~/.config/rc.conf
-3) Inside config file: set draw_borders true
-
-To enable preview of images:
-1) set preview_images true
-2) set preview_images_method iterm2
-
-7. Midnight commander (mc):
-
-brew install midnight-commander
-
-if backspace in insert mode does not work:
-add `set backspace=indent,eol,start` to `.vimrc` file
-
-
-8. Auto-Complete in vim:
-
-- add `Plugin 'Valloric/YouCompleteMe'` in .vimrc file
-- run in vim :PluginInstall
-- cd ~/.vim/bundle/YouCompleteMe/
-- ./install.py
-- ./install.py --clang-completer
-If it's not working again run :PluginInstall
-
-Source: https://programmer.group/installation-of-vim-plug-in-youcompleteme-for-mac.html
+https://github.com/ycm-core/YouCompleteMe#installation
 
 9. Syntastic
 
 Install:
 add to .vimrc plugin
-Plugin 'vim-syntastic/syntastic'
-Plugin 'nvie/vim-flake8'
+`Plugin 'vim-syntastic/syntastic'
+Plugin 'nvie/vim-flake8'`
 
 Settings:
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
+`set statusline+=%#warningmsg#`
+`set statusline+=%{SyntasticStatuslineFlag()}`
+`set statusline+=%*`
+
+`let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 0`
 
-For using python3 checker instead of python2
-let g:syntastic_python_python_exec = 'python3'
-let g:syntastic_python_checkers = ['python']
+For using python3 checker instead of python2:
+
+`let g:syntastic_python_python_exec = 'python3'
+let g:syntastic_python_checkers = ['python']`
 
 Source:
 https://github.com/vim-syntastic/syntastic
@@ -161,6 +117,39 @@ ctrl+r for searching on history of command line
 ssh ** press tab => suggests all ip
 or vim ** and then tab
 
+
+## Useful plugins that are not included in Quick installation:
+
+1. **Ranger:**
+
+To install `brew install ranger`
+
+To draw borders:
+
+1) `ranger --copy-config=all`
+
+2) path to config: `~/.config/rc.conf`
+
+3) Inside config file: `set draw_borders true`
+
+To enable preview of images:
+
+1) `set preview_images true`
+
+2) `set preview_images_method iterm2`
+
+2. **Midnight commander (mc):**
+
+To install: `brew install midnight-commander`
+
+
+
+
+
+
+
+
+
 ## HotKeys in CLI:
 cmd + enter - FullScreen
 ctrl+L - clear
@@ -184,3 +173,26 @@ shift+$ - beggining of line (NOT i mode)
 for ctrl+A for select all:
 
 map <C-a> <esc>ggVG<CR>
+
+
+
+
+### Shortcuts for iTerm2:
+
+Split horizontally: **cmd+d**
+
+Split vertically: **cmd-shift-d**
+
+### Some useful notes:
+
+1. `cd /u/lo/ce` then press tab => `cd /usr/local/Cellar/`
+
+2. Themes for ZSH:
+
+https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+
+3. Aliases examples:
+
+Add to ~/.zshrc: `alias virtual="ssh mail_2020q1@virtual-client.bigdatateam.ru -L 50070:virtual-master:50070"`
+
+4. If backspace in insert mode does not workin vim: add `set backspace=indent,eol,start` to `.vimrc` file
