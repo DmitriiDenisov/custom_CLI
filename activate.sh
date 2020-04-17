@@ -40,11 +40,13 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py 
 python3 -m pip install setuptools 
 sudo apt install build-essential cmake vim python3-dev 
-cd ~/.vim/bundle/YouCompleteMe
-python3 install.py --all 
 
 # initialize Vim plugins
 vim +PluginInstall +qall
+
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --all 
+
 
 echo $'\360\237\215\251' " [DONE]"
 cd ~
