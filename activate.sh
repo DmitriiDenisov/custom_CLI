@@ -10,17 +10,14 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 # install Oh My ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-cd ~
-rm -r .vim
-ln -si "$working_dir/$folder/vim" .vim
-ln -si "$working_dir/$folder/vimrc" .vimrc
-ln -si "$working_dir/$folder/gitignore" .gitignore
-git config --global core.excludesfile '~/.gitignore'
+# Copy files
+cp .vimrc ~/.vimrc
+cp .zshrc ~/.zshrc
 
 # initialize Vim plugins
 vim +PluginInstall +qall
 
-cd -
+
 
 cd ~
 echo "setting up personal .zshrc ..."
