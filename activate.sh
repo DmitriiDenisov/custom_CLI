@@ -38,8 +38,5 @@ cp -rf .zshrc ~/.zshrc
 # initialize Vim plugins
 vim +PluginInstall +qall
 
-cd ~
-echo "setting up personal .zshrc ..."
-ln -si "$working_dir/$folder/zshrc" .oh-my-zsh/custom/common.zsh
 echo $'\360\237\215\251' " [DONE]"
-cd -
+cd ~
