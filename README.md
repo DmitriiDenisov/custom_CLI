@@ -45,6 +45,10 @@ https://www.youtube.com/watch?v=E_rbfQqrm7g&t=239s
 
 https://github.com/ycm-core/YouCompleteMe#installation
 
+For adding path to 3rd party packages add to `~\.vimrc` this row:
+
+`let g:ycm_path_to_python_interpreter='python3'`
+
 7. Syntastic
 
 Install:
