@@ -132,6 +132,13 @@ https://github.com/preservim/nerdtree
 
 ### Useful plugins that are not included in Quick installation:
 
+0. **Add support of 3rd party libraries for YouCompleteMe**:
+
+Add to `~/.vimrc`:
+
+`let g:ycm_path_to_python_interpreter='/usr/local/bin/python3'`
+where you **need to specify your path to python3**
+
 1. **Ranger:**
 
 To install `brew install ranger`
