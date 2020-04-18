@@ -64,6 +64,8 @@ endif
 Plugin 'Valloric/YouCompleteMe'
 " By this YouCompleteMe will see all installed libraries
 let g:ycm_path_to_python_interpreter='python3'
+" To disable Preview top window
+set completeopt-=preview
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
