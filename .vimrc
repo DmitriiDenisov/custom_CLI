@@ -66,6 +66,8 @@ Plugin 'Valloric/YouCompleteMe'
 let g:ycm_path_to_python_interpreter='python3'
 " To disable Preview top window
 set completeopt-=preview
+" To select first suggestion: down + tab
+let g:ycm_key_list_stop_completion = ['<Tab>']
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
